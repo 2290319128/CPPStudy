@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++: build UTF-8",
+            "type": "process",
+            "command": "C:\\mingw\\mingw64\\bin\\g++.exe",
+            "args": ["-std=c++17", "-g", "-Wall", "-Wextra", "-finput-charset=UTF-8", "-fexec-charset=UTF-8", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"],
+            "options": { "cwd": "${fileDirname}" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true }
+        }
+    ]
+}

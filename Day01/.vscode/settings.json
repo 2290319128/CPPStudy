@@ -1,0 +1,15 @@
+{
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": false,
+    "terminal.integrated.profiles.windows": {
+        "CMD UTF-8": {
+            "path": "${env:windir}\\System32\\cmd.exe",
+            "args": ["/K", "chcp 65001 >nul"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "CMD UTF-8",
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "cpp": "cd /d \"$dir\" && g++ -std=c++17 -Wall -Wextra -finput-charset=UTF-8 -fexec-charset=UTF-8 \"$fileName\" -o \"$fileNameWithoutExt.exe\" && \".\\$fileNameWithoutExt.exe\""
+    }
+}
